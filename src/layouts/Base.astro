@@ -2,24 +2,31 @@
 export interface Props {
   title: string;
   description: string;
+  canonicalUrl?: string;
 }
-const { title, description } = Astro.props;
+const { title, description, canonicalUrl } = Astro.props;
+const canon = canonicalUrl || Astro.url.href;
+const GA_ID = 'G-94VQMKH31P';
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7c3aed" />
   <title>{title}</title>
   <meta name="description" content={description} />
-  <link rel="canonical" href={Astro.url.href} />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-94VQMKH31P"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-94VQMKH31P');
-  </script>
+  <link rel="canonical" href={canon} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canon} />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 </head>
 <body class="min-h-screen flex flex-col bg-white text-gray-900">
   <header class="border-b bg-white sticky top-0 z-10">
@@ -41,5 +48,12 @@ const { title, description } = Astro.props;
     <a href="/privacy" class="hover:underline">Privacy</a> &nbsp;|&nbsp;
     <a href="/terms" class="hover:underline">Terms</a>
   </footer>
+  <script defer src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+  <script define:vars={{ GA_ID }}>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+  </script>
 </body>
 </html>
