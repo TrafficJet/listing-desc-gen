@@ -1,0 +1,189 @@
+---
+import Base from '../layouts/Base.astro';
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Real Estate Listing Description Generator",
+  "description": "Generate professional MLS-ready real estate listing descriptions instantly. Free, no signup.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+});
+---
+<Base
+  title="Real Estate Listing Description Generator — Free, Instant"
+  description="Generate professional, MLS-ready real estate listing descriptions in seconds. Enter property details and get a polished description. Free, no signup."
+>
+  <script type="application/ld+json" set:html={schema} />
+
+  <div class="text-center mb-8">
+    <h1 class="text-4xl font-bold mb-3">Listing Description Generator</h1>
+    <p class="text-gray-500 text-lg max-w-xl mx-auto">Generate a professional, MLS-ready listing description in seconds. Free — no signup required.</p>
+  </div>
+
+  <div class="bg-gray-50 border rounded-xl p-8 max-w-2xl mx-auto">
+    <form id="gen-form" class="space-y-5">
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium mb-1" for="prop_type">Property Type</label>
+          <select id="prop_type" class="w-full border rounded-lg px-3 py-2">
+            <option>Single Family</option>
+            <option>Condo</option>
+            <option>Townhouse</option>
+            <option>Multi-Family</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="tone">Tone</label>
+          <select id="tone" class="w-full border rounded-lg px-3 py-2">
+            <option>Professional</option>
+            <option>Warm &amp; Inviting</option>
+            <option>Luxury</option>
+            <option>Investment-focused</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <div>
+          <label class="block text-sm font-medium mb-1" for="beds">Beds</label>
+          <input id="beds" type="number" min="1" max="10" placeholder="3" class="w-full border rounded-lg px-3 py-2" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="baths">Baths</label>
+          <input id="baths" type="number" min="1" max="10" step="0.5" placeholder="2" class="w-full border rounded-lg px-3 py-2" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="sqft">Sq Ft</label>
+          <input id="sqft" type="number" min="200" placeholder="1800" class="w-full border rounded-lg px-3 py-2" />
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium mb-1" for="location">Location</label>
+          <input id="location" type="text" placeholder="e.g. Austin, TX" class="w-full border rounded-lg px-3 py-2" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="year">Year Built</label>
+          <input id="year" type="number" min="1900" max="2025" placeholder="2005" class="w-full border rounded-lg px-3 py-2" />
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-2">Key Features</label>
+        <div class="grid grid-cols-2 gap-1 text-sm">
+          {["Updated kitchen","Hardwood floors","Open floor plan","Vaulted ceilings","Primary suite","Walk-in closets","Home office","Finished basement","2-car garage","Pool","Large backyard","New roof","New HVAC","Smart home"].map(f => (
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="checkbox" class="feat-check" value={f} />
+              {f}
+            </label>
+          ))}
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-2">Nearby</label>
+        <div class="grid grid-cols-2 gap-1 text-sm">
+          {["Top-rated schools","Shopping & dining","Parks & trails","Public transit","Highway access","Waterfront"].map(a => (
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="checkbox" class="near-check" value={a} />
+              {a}
+            </label>
+          ))}
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1" for="notes">Extra Notes (optional)</label>
+        <textarea id="notes" rows="2" maxlength="200" placeholder="e.g. recently renovated, corner lot, city views..." class="w-full border rounded-lg px-3 py-2 text-sm"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-violet-700 text-white py-3 rounded-lg font-semibold hover:bg-violet-800 transition">
+        Generate Description
+      </button>
+    </form>
+
+    <div id="output" class="mt-6 hidden">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="font-semibold text-lg">Your Listing Description</h2>
+        <button id="regen-btn" class="text-sm text-violet-700 hover:underline">Regenerate ↻</button>
+      </div>
+      <div id="desc-text" class="bg-white border rounded-lg p-4 text-gray-700 leading-relaxed text-sm whitespace-pre-line"></div>
+      <button id="copy-btn" class="mt-3 w-full border border-violet-700 text-violet-700 py-2 rounded-lg font-semibold hover:bg-violet-50 transition">
+        Copy to Clipboard
+      </button>
+    </div>
+  </div>
+
+  <script>
+    let variant = 0;
+
+    function getChecked(cls) {
+      return [...document.querySelectorAll('.' + cls + ':checked')].map(el => el.value);
+    }
+
+    function generate(v) {
+      const type = document.getElementById('prop_type').value;
+      const tone = document.getElementById('tone').value;
+      const beds = document.getElementById('beds').value || '3';
+      const baths = document.getElementById('baths').value || '2';
+      const sqft = document.getElementById('sqft').value;
+      const loc = document.getElementById('location').value || 'a sought-after neighborhood';
+      const year = document.getElementById('year').value;
+      const feats = getChecked('feat-check');
+      const near = getChecked('near-check');
+      const notes = document.getElementById('notes').value.trim();
+
+      const f1 = feats[0] || 'open floor plan';
+      const f2 = feats[1] || 'updated kitchen';
+      const f3 = feats[2] || 'spacious layout';
+      const sqftStr = sqft ? `${parseInt(sqft).toLocaleString()} sq ft ` : '';
+      const yearStr = year ? ` Built in ${year},` : '';
+      const nearStr = near.length ? `Conveniently located near ${near.slice(0,3).join(', ')}.` : '';
+      const notesStr = notes ? ` ${notes}.` : '';
+
+      const templates = {
+        "Professional": [
+          `Welcome to this ${beds}-bed, ${baths}-bath ${type.toLowerCase()} in ${loc}.${yearStr} this ${sqftStr}home features ${f1}, ${f2}, and ${f3}.${notesStr} ${nearStr} A rare opportunity in today's market — schedule your showing today.`,
+          `Presenting a well-maintained ${beds}-bedroom, ${baths}-bathroom ${type.toLowerCase()} nestled in ${loc}. The ${sqftStr}floor plan offers ${f1} and ${f2}, ideal for comfortable everyday living.${notesStr} ${nearStr} Don't miss this one.`,
+          `This ${sqftStr}${type.toLowerCase()} in ${loc} checks every box: ${beds} bedrooms, ${baths} bathrooms, ${f1}, and ${f2}.${yearStr ? yearStr.trim() + '.' : ''} ${nearStr}${notesStr} Move-in ready and priced to sell.`
+        ],
+        "Warm & Inviting": [
+          `Fall in love with this charming ${beds}-bed, ${baths}-bath ${type.toLowerCase()} in ${loc}. From the moment you walk in, you'll feel at home — ${f1}, ${f2}, and ${f3} create a warm, welcoming atmosphere.${notesStr} ${nearStr} Come see it for yourself!`,
+          `Imagine mornings in your ${sqftStr}${type.toLowerCase()} in ${loc} — ${f1} bathed in natural light, ${f2} perfect for family dinners.${notesStr} ${nearStr} This is the home you've been waiting for.`,
+          `Some homes just feel right. This ${beds}-bed, ${baths}-bath ${type.toLowerCase()} in ${loc} is one of them. ${f1} and ${f2} make everyday moments special.${notesStr} ${nearStr} We can't wait to show you around.`
+        ],
+        "Luxury": [
+          `An exceptional ${beds}-bedroom, ${baths}-bathroom ${type.toLowerCase()} offering ${sqftStr}of refined living in ${loc}. Impeccable ${f1}, bespoke ${f2}, and ${f3} reflect a commitment to quality at every turn.${notesStr} ${nearStr} Offered at a level of distinction rarely seen in this market.`,
+          `Step into a world of elevated living. This ${sqftStr}${type.toLowerCase()} in ${loc} presents ${beds} bedrooms, ${baths} bathrooms, and curated finishes throughout — from ${f1} to ${f2}.${notesStr} ${nearStr} For the discerning buyer seeking nothing less than extraordinary.`,
+          `Architecturally distinguished and flawlessly appointed, this ${beds}-bed ${type.toLowerCase()} in ${loc} commands attention. ${f1}, ${f2}, and ${f3} are hallmarks of a home designed for those who demand the finest.${notesStr} ${nearStr}`
+        ],
+        "Investment-focused": [
+          `Strong investment opportunity: ${beds}-bed, ${baths}-bath ${type.toLowerCase()} in ${loc}. The ${sqftStr}layout features ${f1} and ${f2}, commanding strong rental demand in this market.${notesStr} ${nearStr} Ideal for buy-and-hold or BRRRR strategy investors.`,
+          `Add this ${beds}/${baths} ${type.toLowerCase()} in ${loc} to your portfolio. ${sqftStr}of rentable space with ${f1} and ${f2} — attributes tenants consistently prioritize.${notesStr} ${nearStr} Low vacancy market, strong rent-to-price ratio.`,
+          `Cash-flow positive from day one. This ${beds}-bed ${type.toLowerCase()} in ${loc} offers ${f1}, ${f2}, and ${sqftStr}of in-demand living space.${notesStr} ${nearStr} A fundamentals-first acquisition in a proven rental corridor.`
+        ]
+      };
+
+      const set = templates[tone] || templates["Professional"];
+      return set[v % set.length];
+    }
+
+    document.getElementById('gen-form').addEventListener('submit', e => {
+      e.preventDefault();
+      variant = 0;
+      document.getElementById('desc-text').textContent = generate(variant);
+      document.getElementById('output').classList.remove('hidden');
+    });
+
+    document.getElementById('regen-btn').addEventListener('click', () => {
+      variant++;
+      document.getElementById('desc-text').textContent = generate(variant);
+    });
+
+    document.getElementById('copy-btn').addEventListener('click', () => {
+      const text = document.getElementById('desc-text').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy to Clipboard', 2000);
+      });
+    });
+  </script>
+</Base>
