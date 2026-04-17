@@ -13,7 +13,13 @@ const { title, description } = Astro.props;
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={Astro.url.href} />
-  <!-- GA4: replace G-XXXXXXXX -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-94VQMKH31P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-94VQMKH31P');
+  </script>
 </head>
 <body class="min-h-screen flex flex-col bg-white text-gray-900">
   <header class="border-b bg-white sticky top-0 z-10">
