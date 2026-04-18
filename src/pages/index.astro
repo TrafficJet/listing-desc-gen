@@ -183,6 +183,10 @@ const schema = JSON.stringify({
         const btn = document.getElementById('copy-btn');
         btn.textContent = 'Copied!';
         setTimeout(() => btn.textContent = 'Copy to Clipboard', 2000);
+      }).catch(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.textContent = 'Copy failed — select text manually';
+        setTimeout(() => btn.textContent = 'Copy to Clipboard', 3000);
       });
     });
   </script>
