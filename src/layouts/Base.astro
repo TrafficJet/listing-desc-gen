@@ -3,8 +3,9 @@ export interface Props {
   title: string;
   description: string;
   canonicalUrl?: string;
+  noindex?: boolean;
 }
-const { title, description, canonicalUrl } = Astro.props;
+const { title, description, canonicalUrl, noindex } = Astro.props;
 const canon = canonicalUrl || Astro.url.href;
 const GA_ID = 'G-94VQMKH31P';
 ---
@@ -27,6 +28,7 @@ const GA_ID = 'G-94VQMKH31P';
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://www.googletagmanager.com" />
   <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+  {noindex && <meta name="robots" content="noindex, follow" />}
 </head>
 <body class="min-h-screen flex flex-col bg-white text-gray-900">
   <header class="border-b bg-white sticky top-0 z-10">
@@ -34,8 +36,8 @@ const GA_ID = 'G-94VQMKH31P';
       <a href="/" class="text-xl font-bold text-violet-700">ListingDescGen</a>
       <div class="flex gap-6 text-sm font-medium">
         <a href="/" class="hover:text-violet-700 transition">Generator</a>
-        <a href="/examples" class="hover:text-violet-700 transition">Examples</a>
-        <a href="/tips" class="hover:text-violet-700 transition">Tips</a>
+        <a href="/examples/" class="hover:text-violet-700 transition">Examples</a>
+        <a href="/tips/" class="hover:text-violet-700 transition">Tips</a>
         <a href="/blog/" class="hover:text-violet-700 transition">Blog</a>
       </div>
     </nav>
@@ -44,7 +46,7 @@ const GA_ID = 'G-94VQMKH31P';
     <slot />
   </main>
   <footer class="border-t text-center text-xs text-gray-400 py-6">
-    © 2025 ListingDescGen.com &nbsp;|&nbsp;
+    © 2026 ListingDescGen.com &nbsp;|&nbsp;
     <a href="/privacy" class="hover:underline">Privacy</a> &nbsp;|&nbsp;
     <a href="/terms" class="hover:underline">Terms</a>
   </footer>

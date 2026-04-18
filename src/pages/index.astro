@@ -47,11 +47,11 @@ const schema = JSON.stringify({
       <div class="grid grid-cols-3 gap-4">
         <div>
           <label class="block text-sm font-medium mb-1" for="beds">Beds</label>
-          <input id="beds" type="number" min="1" max="10" placeholder="3" class="w-full border rounded-lg px-3 py-2" />
+          <input id="beds" type="number" min="1" max="10" placeholder="3" required class="w-full border rounded-lg px-3 py-2" />
         </div>
         <div>
           <label class="block text-sm font-medium mb-1" for="baths">Baths</label>
-          <input id="baths" type="number" min="1" max="10" step="0.5" placeholder="2" class="w-full border rounded-lg px-3 py-2" />
+          <input id="baths" type="number" min="1" max="10" step="0.5" placeholder="2" required class="w-full border rounded-lg px-3 py-2" />
         </div>
         <div>
           <label class="block text-sm font-medium mb-1" for="sqft">Sq Ft</label>
@@ -61,15 +61,15 @@ const schema = JSON.stringify({
       <div class="grid grid-cols-2 gap-4">
         <div>
           <label class="block text-sm font-medium mb-1" for="location">Location</label>
-          <input id="location" type="text" placeholder="e.g. Austin, TX" class="w-full border rounded-lg px-3 py-2" />
+          <input id="location" type="text" placeholder="e.g. Austin, TX" required class="w-full border rounded-lg px-3 py-2" />
         </div>
         <div>
           <label class="block text-sm font-medium mb-1" for="year">Year Built</label>
-          <input id="year" type="number" min="1900" max="2025" placeholder="2005" class="w-full border rounded-lg px-3 py-2" />
+          <input id="year" type="number" min="1900" max="2026" placeholder="2005" class="w-full border rounded-lg px-3 py-2" />
         </div>
       </div>
       <div>
-        <label class="block text-sm font-medium mb-2">Key Features</label>
+        <label class="block text-sm font-medium mb-2">Key Features <span class="text-gray-400 font-normal">(up to 3 used)</span></label>
         <div class="grid grid-cols-2 gap-1 text-sm">
           {["Updated kitchen","Hardwood floors","Open floor plan","Vaulted ceilings","Primary suite","Walk-in closets","Home office","Finished basement","2-car garage","Pool","Large backyard","New roof","New HVAC","Smart home"].map(f => (
             <label class="flex items-center gap-2 cursor-pointer">
@@ -150,14 +150,14 @@ const schema = JSON.stringify({
           `Some homes just feel right. This ${beds}-bed, ${baths}-bath ${type.toLowerCase()} in ${loc} is one of them. ${f1} and ${f2} make everyday moments special.${notesStr} ${nearStr} We can't wait to show you around.`
         ],
         "Luxury": [
-          `An exceptional ${beds}-bedroom, ${baths}-bathroom ${type.toLowerCase()} offering ${sqftStr}of refined living in ${loc}. Impeccable ${f1}, bespoke ${f2}, and ${f3} reflect a commitment to quality at every turn.${notesStr} ${nearStr} Offered at a level of distinction rarely seen in this market.`,
+          `An exceptional ${beds}-bedroom, ${baths}-bathroom ${type.toLowerCase()} offering${sqftStr ? ` ${sqftStr.trim()} of` : ''} refined living in ${loc}. Impeccable ${f1}, bespoke ${f2}, and ${f3} reflect a commitment to quality at every turn.${notesStr} ${nearStr} Offered at a level of distinction rarely seen in this market.`,
           `Step into a world of elevated living. This ${sqftStr}${type.toLowerCase()} in ${loc} presents ${beds} bedrooms, ${baths} bathrooms, and curated finishes throughout — from ${f1} to ${f2}.${notesStr} ${nearStr} For the discerning buyer seeking nothing less than extraordinary.`,
           `Architecturally distinguished and flawlessly appointed, this ${beds}-bed ${type.toLowerCase()} in ${loc} commands attention. ${f1}, ${f2}, and ${f3} are hallmarks of a home designed for those who demand the finest.${notesStr} ${nearStr}`
         ],
         "Investment-focused": [
           `Strong investment opportunity: ${beds}-bed, ${baths}-bath ${type.toLowerCase()} in ${loc}. The ${sqftStr}layout features ${f1} and ${f2}, commanding strong rental demand in this market.${notesStr} ${nearStr} Ideal for buy-and-hold or BRRRR strategy investors.`,
-          `Add this ${beds}/${baths} ${type.toLowerCase()} in ${loc} to your portfolio. ${sqftStr}of rentable space with ${f1} and ${f2} — attributes tenants consistently prioritize.${notesStr} ${nearStr} Low vacancy market, strong rent-to-price ratio.`,
-          `Cash-flow positive from day one. This ${beds}-bed ${type.toLowerCase()} in ${loc} offers ${f1}, ${f2}, and ${sqftStr}of in-demand living space.${notesStr} ${nearStr} A fundamentals-first acquisition in a proven rental corridor.`
+          `Add this ${beds}/${baths} ${type.toLowerCase()} in ${loc} to your portfolio. ${sqftStr ? sqftStr.trim() + ' of ' : ''}rentable space with ${f1} and ${f2} — attributes tenants consistently prioritize.${notesStr} ${nearStr} Low vacancy market, strong rent-to-price ratio.`,
+          `Cash-flow positive from day one. This ${beds}-bed ${type.toLowerCase()} in ${loc} offers ${f1}, ${f2}, and${sqftStr ? ` ${sqftStr.trim()} of` : ''} in-demand living space.${notesStr} ${nearStr} A fundamentals-first acquisition in a proven rental corridor.`
         ]
       };
 
