@@ -6,6 +6,8 @@ description: "20 copy-paste real estate listing templates for homes, condos, lux
 author: "Alex Morgan"
 tags: ["Real Estate Listing Description Examples: 20 Templates for Every Property Type"]
 seoTitle: "Real Estate Listing Description Examples: 20 Templates | 2026"
+heroImage: "/images/real-estate-listing-description-examples-20-templates-for-every-property-type/hero.jpg"
+heroImageAlt: "Real estate agent typing property listing description on laptop at desk"
 ---
 
 # 20 Real Estate Listing Description Templates (2026)
