@@ -6,6 +6,8 @@ description: "Learn how to write real estate listing descriptions that attract b
 author: "Alex Morgan"
 tags: ["How to Write Real Estate Listing Descriptions That Sell Faster in 2026"]
 seoTitle: "Write Real Estate Listing Descriptions That Sell Faster in 2026"
+heroImage: "/images/how-to-write-real-estate-listing-descriptions-that-sell-faster-in-2026/hero.jpg"
+heroImageAlt: "Real estate agent typing listing description on laptop with property photos nearby"
 ---
 
 # Write Real Estate Listings That Sell Faster in 2026
