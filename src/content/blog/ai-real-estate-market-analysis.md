@@ -6,6 +6,8 @@ description: "Learn how AI real estate market analysis works, compare top platfo
 author: "Alex Morgan"
 tags: ["ai real estate market analysis"]
 seoTitle: "AI Real Estate Market Analysis 2026: Tools & Guide | Listing Description Generator"
+heroImage: "/images/ai-real-estate-market-analysis/hero.jpg"
+heroImageAlt: "Real estate professional reviewing market analysis and property data on laptop with map visualization"
 ---
 
 # AI Real Estate Market Analysis: 2026 Guide
