@@ -6,6 +6,8 @@ description: "Compare flat fee real estate agents vs commission-based agents in 
 author: "Alex Morgan"
 tags: ["flat fee real estate agent vs commission"]
 seoTitle: "Flat Fee vs Commission Real Estate Agent: 2026 Guide"
+heroImage: "/images/flat-fee-real-estate-agent-vs-commission/hero.jpg"
+heroImageAlt: "Real estate agent discussing home features with buyers during showing"
 ---
 
 # Flat Fee vs Commission Real Estate Agent: 2026 Guide
