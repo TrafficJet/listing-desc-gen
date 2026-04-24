@@ -6,6 +6,8 @@ description: "View average real estate commission rates for all 50 states plus D
 author: "Alex Morgan"
 tags: ["real estate commission by state"]
 seoTitle: "Real Estate Commission by State 2026 | Rates Guide"
+heroImage: "/images/real-estate-commission-by-state/hero.jpg"
+heroImageAlt: "Real estate agent reviewing commission agreement and home sale documents at desk"
 ---
 
 # Real Estate Commission by State: 2026 Rates Guide
