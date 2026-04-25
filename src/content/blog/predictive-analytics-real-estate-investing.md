@@ -6,6 +6,8 @@ description: "Learn how predictive analytics helps real estate investors find be
 author: "Alex Morgan"
 tags: ["predictive analytics real estate investing"]
 seoTitle: "Predictive Analytics for Real Estate Investing 2026 | Data-Driven Strategies"
+heroImage: "/images/predictive-analytics-real-estate-investing/hero.jpg"
+heroImageAlt: "Real estate investor reviewing property data and market analytics on laptop screen"
 ---
 
 # Predictive Analytics for Real Estate Investing in 2026
