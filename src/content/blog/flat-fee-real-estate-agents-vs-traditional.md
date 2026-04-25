@@ -6,6 +6,8 @@ description: "Compare flat fee real estate agents vs traditional agents. See exa
 author: "Alex Morgan"
 tags: ["flat fee real estate agents vs traditional"]
 seoTitle: "Flat Fee vs Traditional Real Estate Agents | 2026 Cost Guide"
+heroImage: "/images/flat-fee-real-estate-agents-vs-traditional/hero.jpg"
+heroImageAlt: "Real estate agent discussing listing options with homeowner at kitchen table"
 ---
 
 # Flat Fee vs Traditional Real Estate Agents: 2026 Guide
