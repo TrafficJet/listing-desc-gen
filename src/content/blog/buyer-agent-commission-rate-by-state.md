@@ -6,6 +6,8 @@ description: "Compare buyer agent commission rates by state in 2026. See current
 author: "Alex Morgan"
 tags: ["buyer agent commission rate by state"]
 seoTitle: "Buyer Agent Commission Rates by State 2026 | Listing Description Generator"
+heroImage: "/images/buyer-agent-commission-rate-by-state/hero.jpg"
+heroImageAlt: "Real estate agent discussing commission and paperwork with home buyer at kitchen table"
 ---
 
 # Buyer Agent Commission Rates by State (2026)
