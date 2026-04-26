@@ -6,6 +6,8 @@ description: "Discover the best AI tools for real estate commission management i
 author: "Alex Morgan"
 tags: ["ai tools for real estate commission"]
 seoTitle: "AI Tools for Real Estate Commission: Top 2026 Picks | Listing Description Generator"
+heroImage: "/images/ai-tools-for-real-estate-commission/hero.jpg"
+heroImageAlt: "Real estate agent reviewing commission calculations on laptop screen"
 ---
 
 # AI Tools for Real Estate Commission: Top Picks for 2026
