@@ -6,6 +6,8 @@ description: "Discover the best AI tools for real estate agents in 2026. Save 10
 author: "Alex Morgan"
 tags: ["ai tools for real estate agent"]
 seoTitle: "Best AI Tools for Real Estate Agents in 2026 | Listing Description Generator"
+heroImage: "/images/ai-tools-for-real-estate-agent/hero.jpg"
+heroImageAlt: "Real estate agent reviewing property listings and market data on laptop"
 ---
 
 # Best AI Tools for Real Estate Agents in 2026
