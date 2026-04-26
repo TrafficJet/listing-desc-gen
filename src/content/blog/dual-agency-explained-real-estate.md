@@ -6,6 +6,8 @@ description: "Dual agency puts buyers and sellers at risk. Learn what it means, 
 author: "Alex Morgan"
 tags: ["dual agency explained real estate"]
 seoTitle: "Dual Agency in Real Estate Explained | Risks, Laws & State Rules"
+heroImage: "/images/dual-agency-explained-real-estate/hero.jpg"
+heroImageAlt: "Real estate agent walking with buyers through an open house listing"
 ---
 
 # Dual Agency in Real Estate: What Buyers & Sellers Must Know
