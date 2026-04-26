@@ -6,6 +6,8 @@ description: "Learn how real estate agents use AI to write listings faster, qual
 author: "Alex Morgan"
 tags: ["how to use ai for real estate agent"]
 seoTitle: "How to Use AI for Real Estate Agents in 2026 | Listing Description Generator"
+heroImage: "/images/how-to-use-ai-for-real-estate-agent/hero.jpg"
+heroImageAlt: "Real estate agent using AI tools on laptop to write property listings"
 ---
 
 # How to Use AI as a Real Estate Agent in 2026
