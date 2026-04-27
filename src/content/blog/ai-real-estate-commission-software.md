@@ -6,6 +6,8 @@ description: "Learn how AI real estate commission software automates splits, pre
 author: "Alex Morgan"
 tags: ["ai real estate commission software"]
 seoTitle: "AI Real Estate Commission Software 2026 | Top Platforms & Guide"
+heroImage: "/images/ai-real-estate-commission-software/hero.jpg"
+heroImageAlt: "Real estate broker reviewing commission calculations on laptop with documents and calculator on desk"
 ---
 
 # AI Real Estate Commission Software: 2026 Guide
