@@ -6,6 +6,8 @@ description: "Learn how AI tools automate home buying in 2026—from smart alert
 author: "Alex Morgan"
 tags: ["automate home buying with ai"]
 seoTitle: "Automate Home Buying with AI: 2026 Guide | Listing Description Generator"
+heroImage: "/images/automate-home-buying-with-ai/hero.jpg"
+heroImageAlt: "Real estate professional reviewing home listings and market data on laptop screen"
 ---
 
 # Automate Home Buying with AI: A 2026 Guide
