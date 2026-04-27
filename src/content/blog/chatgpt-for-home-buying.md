@@ -6,6 +6,8 @@ description: "Learn how to use ChatGPT for home buying research, mortgage math, 
 author: "Alex Morgan"
 tags: ["chatgpt for home buying"]
 seoTitle: "ChatGPT for Home Buying: What It Can (and Can't) Do | Listing Description Generator"
+heroImage: "/images/chatgpt-for-home-buying/hero.jpg"
+heroImageAlt: "Homebuyer reviewing mortgage documents and researching on laptop"
 ---
 
 # ChatGPT for Home Buying: What It Can (and Can't) Do
