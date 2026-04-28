@@ -6,6 +6,8 @@ description: "AI property listing assistant generates compliant MLS descriptions
 author: "Alex Morgan"
 tags: ["property listing ai assistant"]
 seoTitle: "Property Listing AI Assistant: Generate MLS Descriptions in Minutes | 2026"
+heroImage: "/images/property-listing-ai-assistant/hero.jpg"
+heroImageAlt: "Real estate agent reviewing property listing on laptop with MLS data"
 ---
 
 # Property Listing AI Assistant: Sell Homes Faster in 2026
