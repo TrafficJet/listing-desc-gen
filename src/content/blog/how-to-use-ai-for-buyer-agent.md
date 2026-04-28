@@ -6,6 +6,8 @@ description: "Learn how buyer agents use AI to pre-qualify buyers, analyze listi
 author: "Alex Morgan"
 tags: ["how to use ai for buyer agent"]
 seoTitle: "How to Use AI for Buyer Agent Work in 2026 | Listing Description Generator"
+heroImage: "/images/how-to-use-ai-for-buyer-agent/hero.jpg"
+heroImageAlt: "Buyer agent reviewing client profile and property criteria on laptop screen"
 ---
 
 # How to Use AI for Buyer Agent Work in 2026
