@@ -6,6 +6,8 @@ description: "Compare top AI tools for property listings: ListingAI, WriteHouse,
 author: "Alex Morgan"
 tags: ["best ai for property listing"]
 seoTitle: "Best AI for Property Listings 2026 | Writing, Photos & Leads"
+heroImage: "/images/best-ai-for-property-listing/hero.jpg"
+heroImageAlt: "Real estate agent reviewing property listing on laptop with MLS database open"
 ---
 
 # Best AI for Property Listings in 2026
