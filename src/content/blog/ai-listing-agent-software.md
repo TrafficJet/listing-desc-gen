@@ -6,6 +6,8 @@ description: "Discover the best AI listing agent software for 2026. Automate des
 author: "Alex Morgan"
 tags: ["ai listing agent software"]
 seoTitle: "AI Listing Agent Software: Top Tools for 2026 | Listing Description Generator"
+heroImage: "/images/ai-listing-agent-software/hero.jpg"
+heroImageAlt: "Real estate agent working on property listings and descriptions on laptop computer"
 ---
 
 # AI Listing Agent Software: Top Tools for 2026
