@@ -6,6 +6,8 @@ description: "Learn how to use ChatGPT for real estate marketing with prompts, c
 author: "Alex Morgan"
 tags: ["chatgpt for real estate marketing"]
 seoTitle: "ChatGPT for Real Estate Marketing: 2026 Guide | Listing Description Generator"
+heroImage: "/images/chatgpt-for-real-estate-marketing/hero.jpg"
+heroImageAlt: "Real estate agent typing property listing on laptop with MLS data visible"
 ---
 
 # ChatGPT for Real Estate Marketing: 2026 Guide
