@@ -6,6 +6,8 @@ description: "Discover the best AI tools for listing agents in 2026. Pricing, de
 author: "Alex Morgan"
 tags: ["ai tools for listing agent"]
 seoTitle: "AI Tools for Listing Agents 2026 | Best Real Estate Software"
+heroImage: "/images/ai-tools-for-listing-agent/hero.jpg"
+heroImageAlt: "Listing agent reviewing property data and pricing information on laptop"
 ---
 
 # Best AI Tools for Listing Agents in 2026
