@@ -6,6 +6,8 @@ description: "Discover the best AI tools for open houses in 2026. Digital check-
 author: "Alex Morgan"
 tags: ["ai tools for open house"]
 seoTitle: "AI Tools for Open House Success in 2026 | Listing Description Generator"
+heroImage: "/images/ai-tools-for-open-house/hero.jpg"
+heroImageAlt: "Real estate agent using tablet to check in visitors at open house"
 ---
 
 # Best AI Tools for Open House Success in 2026
