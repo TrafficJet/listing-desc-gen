@@ -6,6 +6,8 @@ description: "Discover top real estate marketing AI assistants for 2026. Compare
 author: "Alex Morgan"
 tags: ["real estate marketing ai assistant"]
 seoTitle: "Real Estate Marketing AI Assistant Guide 2026 | Tools & ROI"
+heroImage: "/images/real-estate-marketing-ai-assistant/hero.jpg"
+heroImageAlt: "Real estate agent reviewing property listings and client information on laptop"
 ---
 
 # Real Estate Marketing AI Assistant: 2026 Guide
