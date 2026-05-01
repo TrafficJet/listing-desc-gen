@@ -6,6 +6,8 @@ description: "Learn how to automate real estate negotiation with AI in 2026. Dis
 author: "Alex Morgan"
 tags: ["automate real estate negotiation with ai"]
 seoTitle: "Automate Real Estate Negotiation With AI in 2026 | Listing Description Generator"
+heroImage: "/images/automate-real-estate-negotiation-with-ai/hero.jpg"
+heroImageAlt: "Real estate professional reviewing property analytics and comparable sales data on laptop"
 ---
 
 # Automate Real Estate Negotiation With AI in 2026
