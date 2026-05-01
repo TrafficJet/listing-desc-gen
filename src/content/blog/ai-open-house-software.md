@@ -6,6 +6,8 @@ description: "Compare the best AI open house software for realtors in 2026. Lead
 author: "Alex Morgan"
 tags: ["ai open house software"]
 seoTitle: "AI Open House Software: Top Tools for Realtors 2026 | Listing Description Generator"
+heroImage: "/images/ai-open-house-software/hero.jpg"
+heroImageAlt: "Real estate agent using tablet to check in visitors at an open house"
 ---
 
 # AI Open House Software: Top Tools for Realtors in 2026
