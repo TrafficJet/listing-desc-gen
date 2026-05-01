@@ -6,6 +6,8 @@ description: "Learn how to use ChatGPT for real estate negotiation. Copy-paste p
 author: "Alex Morgan"
 tags: ["chatgpt for real estate negotiation"]
 seoTitle: "ChatGPT for Real Estate Negotiation: 2026 Guide | Listing Description Generator"
+heroImage: "/images/chatgpt-for-real-estate-negotiation/hero.jpg"
+heroImageAlt: "Real estate agent reviewing contract negotiations on laptop with documents"
 ---
 
 # ChatGPT for Real Estate Negotiation: A 2026 Guide
