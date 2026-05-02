@@ -6,6 +6,8 @@ description: "Learn how AI home valuation assistants work, compare tools like Zi
 author: "Alex Morgan"
 tags: ["home valuation ai assistant"]
 seoTitle: "Home Valuation AI Assistant: Estimate Your Home's Worth in 2026"
+heroImage: "/images/home-valuation-ai-assistant/hero.jpg"
+heroImageAlt: "Real estate professional reviewing home valuation data on laptop screen"
 ---
 
 # Home Valuation AI Assistant: Get Your Home's Worth
