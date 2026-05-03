@@ -6,6 +6,8 @@ description: "Discover the best AI tools for real estate agents: ChatGPT, Canva,
 author: "Alex Morgan"
 tags: ["ai tools for real estate social media"]
 seoTitle: "AI Tools for Real Estate Social Media 2026 | Listing Description Generator"
+heroImage: "/images/ai-tools-for-real-estate-social-media/hero.jpg"
+heroImageAlt: "Real estate agent recording short-form video content on smartphone for social media"
 ---
 
 # AI Tools for Real Estate Social Media in 2026
