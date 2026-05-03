@@ -6,6 +6,8 @@ description: "Compare top AI real estate social media tools for 2026. Auto-gener
 author: "Alex Morgan"
 tags: ["ai real estate social media software"]
 seoTitle: "AI Real Estate Social Media Software 2026 Guide | Listing Description Generator"
+heroImage: "/images/ai-real-estate-social-media-software/hero.jpg"
+heroImageAlt: "Real estate agent reviewing property listings on laptop while managing social media content"
 ---
 
 # AI Real Estate Social Media Software: 2026 Guide
