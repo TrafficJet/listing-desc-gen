@@ -6,6 +6,8 @@ description: "Master local market data, lead generation systems, and social medi
 author: "Alex Morgan"
 tags: ["real estate agent tips for agents"]
 seoTitle: "Real Estate Agent Tips to Close More Deals in 2026 | LDG"
+heroImage: "/images/real-estate-agent-tips-for-agents/hero.jpg"
+heroImageAlt: "Real estate agent presenting property details to interested buyers during home showing"
 ---
 
 # Real Estate Agent Tips to Close More Deals in 2026
