@@ -6,6 +6,8 @@ description: "Discover the 8 costly real estate agent mistakes to avoid post-NAR
 author: "Alex Morgan"
 tags: ["real estate agent mistakes to avoid"]
 seoTitle: "Real Estate Agent Mistakes to Avoid in 2026 | Listing Description Generator"
+heroImage: "/images/real-estate-agent-mistakes-to-avoid/hero.jpg"
+heroImageAlt: "Real estate agent discussing property details with buyers during home showing"
 ---
 
 # Real Estate Agent Mistakes to Avoid in 2026
