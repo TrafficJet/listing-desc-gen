@@ -6,6 +6,8 @@ description: "Learn 7 actionable strategies to increase real estate commission i
 author: "Alex Morgan"
 tags: ["how to improve real estate commission"]
 seoTitle: "How to Improve Real Estate Commission in 2026 | Listing Description Generator"
+heroImage: "/images/how-to-improve-real-estate-commission/hero.jpg"
+heroImageAlt: "Real estate agent discussing commission agreement and contract terms with client at desk"
 ---
 
 # How to Improve Your Real Estate Commission in 2026
