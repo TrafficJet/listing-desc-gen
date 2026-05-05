@@ -6,6 +6,8 @@ description: "Learn 2026 real estate commission rates, how the NAR settlement ch
 author: "Alex Morgan"
 tags: ["real estate commission guide 2026"]
 seoTitle: "Real Estate Commission Guide 2026: Rates & Negotiation Tips"
+heroImage: "/images/real-estate-commission-guide-2026/hero.jpg"
+heroImageAlt: "Real estate agent showing a home interior to a young couple during a viewing"
 ---
 
 # Real Estate Commission Guide 2026: What You'll Pay
