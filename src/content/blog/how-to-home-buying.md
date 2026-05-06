@@ -6,6 +6,8 @@ description: "Learn how to buy a home in 2026 with our complete step-by-step gui
 author: "Vladislav T."
 tags: ["how to home buying"]
 seoTitle: "How to Buy a Home: Step-by-Step Guide for 2026 | Listing Description Generator"
+heroImage: "/images/how-to-home-buying/hero.jpg"
+heroImageAlt: "Couple reviewing home buying documents and mortgage paperwork at kitchen table"
 ---
 
 # How to Buy a Home: Step-by-Step Guide for 2026
