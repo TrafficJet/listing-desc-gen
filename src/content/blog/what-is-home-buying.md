@@ -6,6 +6,8 @@ description: "Learn what home buying means, from credit checks to closing. Explo
 author: "Vladislav T."
 tags: ["what is home buying"]
 seoTitle: "What Is Home Buying? Plain-English Guide 2026 | Listing Description Generator"
+heroImage: "/images/what-is-home-buying/hero.jpg"
+heroImageAlt: "Family sitting at kitchen table reviewing home purchase documents and mortgage paperwork"
 ---
 
 # What Is Home Buying? A Plain-English Guide (2026)
