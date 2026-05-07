@@ -6,6 +6,8 @@ description: "Master the home buying process as a new agent. Learn pre-approval,
 author: "Vladislav T."
 tags: ["home buying for new agents"]
 seoTitle: "Home Buying for New Agents: Close More Deals in 2026"
+heroImage: "/images/home-buying-for-new-agents/hero.jpg"
+heroImageAlt: "New real estate agent walking young couple through home during showing"
 ---
 
 # Home Buying for New Agents: Close More Deals in 2026
