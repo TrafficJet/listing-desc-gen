@@ -6,6 +6,8 @@ description: "Master the best property listing strategies to sell homes faster. 
 author: "Vladislav T."
 tags: ["best property listing strategies"]
 seoTitle: "Best Property Listing Strategies That Sell Homes Fast | Listing Description Generator"
+heroImage: "/images/best-property-listing-strategies/hero.jpg"
+heroImageAlt: "Real estate agent presenting a bright modern home listing to prospective buyers"
 ---
 
 # Best Property Listing Strategies That Sell Homes Fast
