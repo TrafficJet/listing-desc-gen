@@ -6,6 +6,8 @@ description: "Complete property listing checklist covering legal docs, repairs, 
 author: "Vladislav T."
 tags: ["property listing checklist"]
 seoTitle: "Property Listing Checklist: 7 Steps to Sell Faster in 2026"
+heroImage: "/images/property-listing-checklist/hero.jpg"
+heroImageAlt: "Real estate professional organizing seller disclosure documents and property files on desk"
 ---
 
 # Property Listing Checklist: Sell Faster in 2026
