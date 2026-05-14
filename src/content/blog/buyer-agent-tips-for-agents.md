@@ -6,6 +6,8 @@ description: "Master post-2024 buyer agent strategies. Learn compensation negoti
 author: "Vladislav T."
 tags: ["buyer agent tips for agents"]
 seoTitle: "Buyer Agent Tips: Close More Deals in 2026 | Listing Description Generator"
+heroImage: "/images/buyer-agent-tips-for-agents/hero.jpg"
+heroImageAlt: "Real estate agent walking buyers through a home during a showing"
 ---
 
 # Buyer Agent Tips: Close More Deals in 2026
