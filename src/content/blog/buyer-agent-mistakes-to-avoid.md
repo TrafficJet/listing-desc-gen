@@ -6,6 +6,8 @@ description: "Avoid costly buyer agent mistakes post-NAR settlement. Learn 9 dam
 author: "Vladislav T."
 tags: ["buyer agent mistakes to avoid"]
 seoTitle: "Buyer Agent Mistakes to Avoid in 2026 | Listing Description Generator"
+heroImage: "/images/buyer-agent-mistakes-to-avoid/hero.jpg"
+heroImageAlt: "Real estate agent discussing property details with homebuyer during showing"
 ---
 
 # Buyer Agent Mistakes to Avoid in 2026
