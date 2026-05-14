@@ -6,6 +6,8 @@ description: "Learn what listing agents do, how to choose one, negotiate commiss
 author: "Vladislav T."
 tags: ["listing agent guide 2026"]
 seoTitle: "Listing Agent Guide 2026: Sell Smarter & Keep More Money"
+heroImage: "/images/listing-agent-guide-2026/hero.jpg"
+heroImageAlt: "Listing agent walking buyers through an open house showing"
 ---
 
 # Listing Agent Guide 2026: Sell Smarter This Year
