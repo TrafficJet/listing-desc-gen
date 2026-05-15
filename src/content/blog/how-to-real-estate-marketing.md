@@ -6,6 +6,8 @@ description: "Master real estate marketing strategies for 2026: SEO, branding, l
 author: "Vladislav T."
 tags: ["how to real estate marketing"]
 seoTitle: "How to Do Real Estate Marketing in 2026 | Listing Description Generator"
+heroImage: "/images/how-to-real-estate-marketing/hero.jpg"
+heroImageAlt: "Real estate agent presenting a home to a young couple during a property viewing"
 ---
 
 # How to Do Real Estate Marketing in 2026
