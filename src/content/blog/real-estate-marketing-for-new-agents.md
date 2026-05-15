@@ -6,6 +6,8 @@ description: "Learn proven real estate marketing strategies for new agents in 20
 author: "Vladislav T."
 tags: ["real estate marketing for new agents"]
 seoTitle: "Real Estate Marketing for New Agents: 2026 Guide | Listing Description Generator"
+heroImage: "/images/real-estate-marketing-for-new-agents/hero.jpg"
+heroImageAlt: "Real estate agent greeting young couple at home entrance during property showing"
 ---
 
 # Real Estate Marketing for New Agents: 2026 Guide
